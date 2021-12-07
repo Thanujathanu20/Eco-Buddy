@@ -47,9 +47,9 @@ INSTALLED_APPS = [
     'paypal.standard.ipn',
     # 'django_ocr_server',
 
-    # 'allauth',
-    # 'allauth.account',
-    # 'allauth.socialaccount',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     
 ]
 
@@ -147,14 +147,14 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 LOGIN_REDIRECT_URL="/"
 
-EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST="smtp.gmail.com"
-EMAIL_USE_TLS=True
-# EMAIL_HOST_USER = 'sumashreya.t18@iiits.in'
-# EMAIL_HOST_PASSWORD = 'ctwiptrykthstvep'
-EMAIL_HOST_USER = 'sumashreya72@gmail.com'
-EMAIL_HOST_PASSWORD = '2001@shreya'
-EMAIL_PORT = 587
+# EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST="smtp.gmail.com"
+# EMAIL_USE_TLS=True
+# # EMAIL_HOST_USER = 'sumashreya.t18@iiits.in'
+# # EMAIL_HOST_PASSWORD = 'ctwiptrykthstvep'
+# EMAIL_HOST_USER = 'sumashreya72@gmail.com'
+# EMAIL_HOST_PASSWORD = '2001@shreya'
+# EMAIL_PORT = 587
 
 print ("base dir path", BASE_DIR)
 SENDSMS_BACKEND = 'myapp.mysmsbackend.SmsBackend'
